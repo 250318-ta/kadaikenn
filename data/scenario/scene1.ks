@@ -1,0 +1,18 @@
+[_tb_system_call storage=system/_scene1.ks]
+
+[cm  ]
+[bg  storage="title.jpg"  time="1000"  ]
+[chara_show  name="さとし"  time="1000"  wait="true"  storage="chara/1/あ.png"  width="400"  height="630"  top="0"  left="100"  ]
+[chara_show  name="はるか"  time="1000"  wait="true"  storage="chara/2/う.png"  width="300"  height="630"  top="0"  left="510"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+どっちをえらぶ？[p]
+[_tb_end_text]
+
+[glink  color="black"  storage="b.ks"  size="20"  text="大学"  x="418"  y="120"  width=""  height=""  _clickable_img=""  target="*s"  autopos="true"  ]
+[glink  color="black"  storage="c.ks"  size="20"  text="就職"  target="*v"  y="0"  autopos="true"  ]
+[tb_hide_message_window  ]
+[s  ]
+[cm  ]
+[jump  storage="b.ks"  target="*s"  ]
+[jump  storage="c.ks"  target="*v"  ]
